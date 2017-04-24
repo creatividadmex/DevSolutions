@@ -1,7 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<section class="main">
+	<ul>
+		<li>
+			<div class="ch-item">
+				<div class="ch-info-wrap">
+					<div class="ch-info">
+						<div class="ch-info-back">
+							<h3>Klava Jinx</h3>
+							<p>by Jamal Charanek <a href="http://drbl.in/ejLW">View on Dribbble</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</section>
+<style type="text/css">
+
+.ch-info-wrap, 
 .ch-info{
-		position: absolute;
-		width: 180px;
-		height: 180px;
+	position: absolute;
+	width: 180px;
+	height: 180px;
+}
+
+.ch-info-wrap {
+	top: 20px;
+	left: 20px;
+	background: #f9f9f9 url(assets/images/logo.jpg);
+	box-shadow: 
+		0 0 0 20px rgba(255,255,255,0.2), 
+		inset 0 0 3px rgba(115,114, 23, 0.8);
+
 }
 
 .ch-info > div {
@@ -17,6 +52,7 @@
 .ch-info .ch-info-back {
 	opacity: 0;
 
+	background: #223e87;
 	pointer-events: none;
 	
 	-webkit-transform: scale(1.5);
@@ -71,7 +107,7 @@
 	color: #fff;
 }
 
-#myCarousel:hover .ch-info-front {
+.ch-item:hover .ch-info-front {
 	-webkit-transform: scale(0);
 	-moz-transform: scale(0);
 	-o-transform: scale(0);
@@ -81,7 +117,7 @@
 	opacity: 0;
 } 
 
-#myCarousel:hover .ch-info-back {
+.ch-item:hover .ch-info-back {
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
 	-o-transform: scale(1);
@@ -91,3 +127,6 @@
 	opacity: 1;
 	pointer-events: auto;
 }
+</style>
+</body>
+</html>
